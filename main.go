@@ -80,6 +80,7 @@ func addEntry(w http.ResponseWriter, r *http.Request) {
 	// LOG
 	log.Printf("log - entry added: %s.\n", randomData)
 	log.Printf("<4> log - entry added: %s.\n", randomData)
+	fmt.Println("<4> this maybe")
 
 	slog.Info("slog.Info - entry added", "data", randomData, "total", count)
 	slog.Warn("<2> slog.Warn - entry added", "data", randomData, "total", count)
